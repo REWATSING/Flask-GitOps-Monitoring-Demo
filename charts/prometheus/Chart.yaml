@@ -1,0 +1,7 @@
+apiVersion: v2
+name: prometheus
+version: 0.1.0
+dependencies:
+  - name: kube-prometheus
+    version: 8.11.0
+    repository: https://charts.bitnami.com/bitnami

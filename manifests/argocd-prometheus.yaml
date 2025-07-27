@@ -6,9 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://charts.bitnami.com/bitnami
-    chart: kube-prometheus
-    targetRevision: 8.8.0   # Or latest
+    repoURL: https://github.com/REWATSING/Flask-GitOps-Monitoring-Demo
+    path: charts/prometheus
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: monitoring

@@ -19,7 +19,10 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - containerPort: 5000
+            - name: http
+              containerPort: 5000
+            - name: metrics
+              containerPort: 8000
           env:
             - name: FLASK_ENV
               value: production
