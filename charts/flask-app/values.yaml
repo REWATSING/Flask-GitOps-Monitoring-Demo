@@ -1,7 +1,9 @@
 image:
   repository: trial5em87r.jfrog.io/flask-gitops-monitor-docker-local/flask-demo
-  tag: "v1.0.0"
-  pullPolicy: IfNotPresent
+  tag: v1.0.0
+  pullPolicy: Always
+  
+
 
 service:
   type: ClusterIP
@@ -11,8 +13,3 @@ resources:
   limits:
     cpu: 500m
     memory: 256Mi
-
-# # Optional
-# imagePullSecrets:
-#   - name: jfrog-pull-secret
-
