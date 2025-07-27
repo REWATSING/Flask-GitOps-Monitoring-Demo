@@ -12,7 +12,7 @@ resources:
     cpu: 500m
     memory: 256Mi
 
-# Optional
-imagePullSecrets:
-  - name: jfrog-pull-secret
+# # Optional
+# imagePullSecrets:
+#   - name: jfrog-pull-secret
 
